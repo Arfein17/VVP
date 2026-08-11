@@ -1,0 +1,17 @@
+public class PalindrmeString {
+    public static void main(String[] args) {
+        String text = "malayalam";
+        char [] arr= text.toCharArray();
+        int S=0;
+        int E=arr.length-1;
+        while (S<E) {
+            if (arr[S]!=arr[E]) {
+                System.out.println("NotPalinrdome");
+                return;
+            }
+            S++;
+            E--;
+        }
+        System.out.println("isPalindrme");
+    }
+}
